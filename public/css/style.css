@@ -1,0 +1,924 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Viga&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Viga;
+
+}
+body {
+    margin: 0;
+    background-color: #FFF7F5;
+  }
+
+  .container {
+    display: flex; /* Define o container como flexível */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    background-color: #DD8C8C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    
+}  
+  
+.cabecalho{
+    width: auto;
+    height: 55px;
+    margin: 0 auto;
+    color: #FFF;
+  }
+  .cabecalho p{
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+.cabecalho p{
+    color: #fff;
+}
+  .menu {
+    min-width: 14%;
+    height: 120vh;
+    background-color: #DD8C8C;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 0px 0px 10px 10px;
+    color: #FFF;
+    font-size: 16px;
+    float: left;
+}
+
+i{
+    text-decoration: none;
+    color: #FFF;
+    margin: 4%;
+}
+  
+  .menu a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .menu a.active {
+    background-color: #ffefef31;
+    color: white;
+  }
+  
+  .menu a:hover:not(.active) {
+    background-color: #863D3D;
+    color: #FFF;
+    text-decoration: none;
+
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  .menu-toggle {
+    display: none; /* Esconde o botão de hambúrguer em dispositivos maiores */
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+    .bar {
+        width: 25px;
+        height: 3.5px;
+        background-color: #fff;
+        margin: 3px 5px;
+        transition: 0.4s;
+    }
+
+    a {
+        color: #fff; /* Define a cor do link não visitado para vermelho */
+        text-decoration: none; /* Remove sublinhado padrão (opcional) */
+    }
+    
+    .sair{
+        background-color: #863D3D;
+        border: 0px;
+        border-radius: 3px ;
+        margin: 5%;
+        color: #ffffff;
+        padding: 5px 20px;
+        cursor: pointer;
+      }
+/*-----------------------Home-----------------------*/
+
+.atalho{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    }
+    .icone{
+    background-color: #863D3D;
+    border-radius: 5px;
+    width: 189px;
+    margin: auto;
+    margin-left: 2%;
+    margin-top: 7%;
+    justify-content: space-around;
+    }
+    .icone p:hover, .active {
+      color: #863D3D;
+    }
+    .icone p{
+    background-color: #fff;
+    width: 70%;
+    border-radius: 2px;
+    padding: 5%;
+    color: #DD8C8C;
+    margin-top: 5%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 11%;
+    }
+    .icone img{
+    margin: auto;
+    padding: 7% 3%;
+    width: 70%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    }
+    .tabela{
+    width: 70%;
+    }
+    
+    .titulo{
+    background-color: #DD8C8C;
+    color: #FFF;
+    display: flex;
+ 
+    flex-direction: row;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+    }
+    
+
+    table {
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        height: auto;
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 1%;
+        }
+        table thead {
+        display: none;
+        }
+        table tbody tr {
+        border: 1px solid #dad6eb;
+        border-radius: 5px;
+        display: block;
+        padding: 30px;
+        margin-bottom: 30px;
+        }
+        table tbody tr td {
+        display: block;
+        padding: 5px;
+        position: relative;
+        text-align: right;
+        }
+        
+        table tbody tr td button {
+        background: #863D3D;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.25) inset;
+        bottom: -30px;
+        color: #fff;
+        left: 50%;
+        padding: 10px 0;
+        position: absolute;
+        transform: translate(-50%, 50%);
+        transition:- background 0.12s ease-out;
+        width: 50%;
+        }
+        .btn-sm2{
+            visibility: hidden;
+        }
+        table tbody tr td button:hover, table tbody tr td button:focus {
+        box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
+        background: #DD8C8C;
+        cursor: pointer;
+        }
+        table tbody tr td:before {
+        color: #8a8a87;
+        content: attr(data-label);
+        left: 5px;
+        position: absolute;
+        }
+
+
+/*-------------- Produtos ----------------*/
+
+.card-conteudo {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha */
+    justify-content: left; /* Centraliza os cartões horizontalmente */
+    margin-left: 20%;
+
+}
+
+/* Estilos do cartão */
+.card {
+    max-width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 4px;
+}
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.card p {
+    font-size: 1rem;
+    color: #777;
+}
+.card button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card button:hover {
+    background-color: #0056b3;
+}
+
+       
+/*-------------- Rodapé ---------------*/
+
+
+.main_footer { background-color:#863D3D; width:100%; float:left; text-align:center; padding:1.5em 0em;}
+.main_footer p { font-size:1em; color:#e1e0e0; height:24px; }
+.main_footer .m-b-footer   { margin-bottom:0.5em; }
+.main_footer .by   { font-size:0.96em; }
+.main_footer .by a       { color:#fff; text-decoration:none; }
+.main_footer .by a:hover { text-decoration:underline; }
+.main_footer .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+
+
+/*-------------- Pedidos ---------------*/
+
+.container2 {
+    padding: 16px;
+}
+
+.search-box{
+  transform: translate(0%, 0%);
+  background: #f9bfbf;
+  border: 1px;
+  border-color: #DD8C8C;
+  height: 40px;
+  border-radius: 13px;
+  padding: 0px 8px;
+}
+.search-box ::placeholder{
+  color: #fff;
+}
+.search-box:hover > input{
+  width:90px;
+  padding: 0 1px; /*diminui o comprimento da pesquisa*/
+}
+
+.iicon:hover{
+  transform: rotate(360deg) scale(0.8);
+}
+.search-box input{
+  width: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+  transition: 0.5s ease;
+  line-height: 40px;
+  color: #fff;
+}
+.iicon{
+  color: #863D3D;
+  float: right;
+  width: 30px;
+  font-size:1.1rem;
+  height: 40px;
+  border-radius: 80%;
+  background: #f9bfbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.titulo button{
+  background-color: #863D3D;
+  border: 0px;
+  margin-right: 10px ;
+  border-radius: 13px ;
+  color: #ffffff;
+  padding: 12px;
+  cursor: pointer;
+}
+/*Estilizar os campus do formularioooooooo*/
+.modal input[type=text],
+.modal input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 2px solid #863D3D;
+    box-sizing: border-box;
+}
+/* set a style for all buttons*/
+.modal button {
+    background-color: green;
+    color: white;
+    padding: 13px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid #863D3D;
+    border-radius: 10px;
+
+}
+
+.modal .cancelbtn {
+    padding: 14px 20px;
+    background-color: #FF2E00;
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 50px;
+}
+
+.modal-content {
+    margin: 5% auto 15% auto;
+    border: 3px solid #863D3D;
+    width: 30%;
+    border-radius: 20px;
+    border-radius: 10px;
+    background: #FFF7F5;
+}
+
+.modal input{
+    width: 279px;
+    height: 28px;
+    border-radius: 5px;
+}
+
+.modal p{
+    color: #863d3dcc;
+    margin-bottom: 10px;
+}
+
+.modal label{
+    color: #863D3D;
+    margin-right: 100%;
+    font-size: 14px;
+ 
+}
+/*define the close button*/
+ 
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+ 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Estilo do conteúdo do modal */
+
+.modal-content {
+  background-color: #f3c4c4;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal .botaoCan{
+  background-color: red;
+}
+.modal .botaoSair{
+  background-color: green;
+}
+
+.botaoSair {
+            width: 45px;
+            height: 45px;
+            margin: 10px 20px 10px 0px;
+            padding: 5px;
+            border: 2px solid #f9bfbf;
+            border-radius: 50%;
+            background-color: #863D3D;
+            transition: background-color 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+.botaoSair i{
+    font-size: 22px;
+}      
+
+.addproduto button{
+  background-color: #863D3D;
+  border: 0px;
+  margin-right: 10px ;
+  border-radius: 13px ;
+  color: #ffffff;
+  padding: 12px;
+  cursor: pointer;
+  margin-left: 11%;
+}
+
+
+
+.card-container {
+
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os cartões horizontalmente */
+}
+/* Estilos do cartão */
+.card {
+  max-width: 250px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.card img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 4px;
+}
+.card h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.card p {
+  font-size: 1rem;
+  color: #777;
+}
+.card button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #863D3D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card button:hover {
+  background-color: #b86666;
+}
+
+/*----------------- Tarefas ----------------------*/
+todo-container button {
+  background-color: #fdfdfd;
+  color: #DD8C8C;
+  border: 2px solid #863D3D;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+todo-container button:hover {
+  background-color: #863D3D;
+}
+
+todo-container button:hover > i {
+  color: #fff;
+}
+
+todo-container button i {
+  pointer-events: none;
+  color: #863D3D;
+  font-weight: bold;
+}
+input,
+select {
+  padding: 0.25rem 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Todo Header */
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto 0;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Todo Form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+  color: #444;
+}
+
+/* Todo Toolbar */
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #863D3D;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  border-right: 1px solid #863D3D;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Todo List */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #863D3D;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background: #DD8C8C;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+
+/*-------------- Responsivo ---------------*/
+@media (max-width: 1100px){
+   #conteudo{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+}
+@media (min-width: 1000px) {
+  .btn-sm2{
+    visibility: visible;
+
+  }
+  .titulo{
+    max-width: 900px;
+    width: 100%;
+  }
+  table {
+    max-width: 900px;
+    width: 100%;
+  }
+  td{
+   color: #5c5c5c;
+  }
+  table thead {
+    display: table-header-group;
+  }
+  table thead th {
+    padding: 10px;
+  }
+  table tbody {
+    font-size: 0.800em;
+  }
+  table tbody tr {
+    border: none;
+    display: table-row;
+  }
+  table tbody tr:nth-child(odd) {
+    border: 1px solid #eee;
+  }
+  table tbody tr td {
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+  }
+  table tbody tr td button {
+    display: inline-block;
+    padding: 10px 15px;
+    position: initial;
+    transform: translate(0);
+    width: auto;
+  }
+  table tbody tr td:before {
+    display: none;
+  }
+  table tbody tr td:last-child {
+    text-align: center;
+  }
+  
+        .modal input[type=text],
+        .modal input[type=password] {
+          width: 100%;
+        }
+      
+        .cancelbtn,
+        .signupbtn {
+          width: 100%;
+          float: none;
+          margin: 10px 0;
+        }
+      
+        .modal-content {
+          width: 30%;
+          margin: 5% auto;
+        }
+      
+        .modal input {
+          width: 100%;
+        }
+        .modal p{
+            font-size: 14px;
+            text-align: left;
+        }
+      
+      }
+  
+
+@media screen and (max-width: 990px) {
+    .atalho{
+        width: 90%; 
+    }
+    .titulo{
+    max-width: 500px;
+    width: 100%;
+  }
+  table {
+    max-width: 500px;
+    width: 100%;
+  }
+   
+.modal input[type=text],
+        .modal input[type=password] {
+          width: 100%;
+        }
+      
+        .cancelbtn,
+        .signupbtn {
+          width: 100%;
+          float: none;
+          margin: 10px 0;
+        }
+      
+        .modal-content {
+          width: 70%;
+          margin: 5% auto;
+        }
+      
+        .modal input {
+          width: 100%;
+        }
+        .modal p{
+            font-size: 14px;
+        }
+    .menu {
+      display: none;
+      width: 100%;
+      height: auto;
+      background-color: #DD8C8C;
+    }
+    .menu a {
+        text-align: center;
+        float: none;
+      }
+    .menu.active {
+        display: flex; /* Mostra o menu quando o botão de hambúrguer é clicado */
+        position: absolute;
+        
+    }
+    #conteudo{
+        margin-top: 10%;
+        margin-right: 40px;
+    }
+    .menu-toggle {
+        display: flex; /* Mostra o botão de hambúrguer */
+        margin-left: 3%;
+    }
+
+    .bar.change {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+          
+    }
+
+  @media screen and (max-width: 700px) {
+      table tbody tr td button:hover, table tbody tr td button:focus {
+        box-shadow: 0 4px 8px rgba(34, 34, 34, 0.2);
+        background: #DD8C8C;
+        cursor: pointer;
+        }
+    .icone p{
+        font-size: 60%;
+      }
+      .parte2 img{
+        width: 15%;
+        margin-top: 10px;
+      }
+      .menu li{
+          font-size: 10px;
+      }
+      table tbody, button{
+          font-size: 0.750em;
+        }
+    .menu .bi{
+        display: none;   
+        }
+    .sair{
+        margin: 0;
+        border-radius: 0;
+      }    
+      .search-box{
+  display: none;
+}
+.modal input[type=text],
+        .modal input[type=password] {
+          width: 100%;
+        }
+      
+        .cancelbtn,
+        .signupbtn {
+          width: 100%;
+          float: none;
+          margin: 10px 0;
+        }
+      
+        .modal-content {
+          width: 70%;
+          margin: 5% auto;
+        }
+      
+        .modal input {
+          width: 100%;
+        }
+        .modal p{
+            font-size: 14px;
+        }
+        .main_footer{ 
+        font-size:0.8em; 
+        margin-top: 35vh;
+}
+      }
+
+  @media (max-width: 500px) {
+          .titulo{
+    max-width: 300px;
+    width: 100%;
+  }
+  table {
+    max-width: 300px;
+    width: 100%;
+  }
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+    }
+  
+    .modal-content {
+      width: 70%;
+      margin: 10% auto;
+    }
+  
+    .modal input {
+      width: 100%;
+    }
+    .modal p{
+        font-size: 14px;
+    }
+}
+
+
