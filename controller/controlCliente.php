@@ -1,13 +1,14 @@
 <?php
 
-// Inclui os arquivos necessários
-include_once "../conexao/Conexao.php";
-include_once "../model/classes/Cliente.php";
-include_once "../model/funcoes/clienteDao.php";
+include_once "../controller/conexao/Conexao.php";
+include_once "../app/model/classes/Cliente.php";
+include_once "../app/model/funcoes/clienteDao.php";
 
 // Cria instâncias das classes
 $cliente = new Cliente();
 $clientedao = new clienteDao();
+
+verificarAutenticacao();
 
 // Inicia uma sessão
 session_start();

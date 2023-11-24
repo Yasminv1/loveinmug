@@ -1,7 +1,7 @@
 <?php
-include_once "../conexao/Conexao.php";
-include_once "../model/funcoes/pedidoDao.php";
-include_once "../model/classes/Pedido.php";
+include_once "../controller/conexao/Conexao.php";
+include_once "../app/model/funcoes/pedidoDao.php";
+include_once "../app/model/classes/Pedido.php";
 
 //instancia as classes
 $pedido = new Pedido();

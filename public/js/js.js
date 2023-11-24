@@ -109,8 +109,6 @@ window.addEventListener("click", function (event) {
     }
 });
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.querySelector('.search-box input');
   const tableRows = document.querySelectorAll('tbody tr');
@@ -217,8 +215,7 @@ function closeModal() {
 
 // Função para confirmar a saída e redirecionar para a página de login
 function confirmExit() {
-    // Aqui, você pode redirecionar o usuário para a página de login
-    // Substitua 'pagina-de-login.html' pelo URL da sua página de login
+
     window.location.href = 'https://hostdeprojetosdoifsp.gru.br/loveinmug/login.html';
 }
 

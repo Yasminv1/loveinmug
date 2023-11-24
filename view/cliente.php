@@ -1,7 +1,7 @@
 <?php
-include_once "../conexao/Conexao.php";
-include_once "../model/funcoes/clienteDao.php";
-include_once "../model/classes/Cliente.php";
+include_once "../controller/conexao/Conexao.php";
+include_once "../app/model/funcoes/clienteDao.php";
+include_once "../app/model/classes/Cliente.php";
 
 //instancia as classes
 $cliente = new Cliente();
@@ -60,8 +60,7 @@ $clientedao = new clienteDao();
                 <div class="bar"></div>
             </div>
             <div class="cabecalho">
-                <img src="../img" alt="">
-                <p>Clientes</p>
+                </br><p>Clientes</p>
             </div>
                 <button class="botaoSair" onclick="openModal()"><i class="bi bi-box-arrow-right"></i></button>
     

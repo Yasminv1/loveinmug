@@ -1,6 +1,6 @@
 <?php
 
-include_once('../model/funcoes/PedidoDao.php');
+include_once('../app/model/funcoes/PedidoDao.php');
 
 class Produto{
     private $ID_PRODUTO;

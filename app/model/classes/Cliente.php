@@ -1,6 +1,6 @@
 <?php
 
-include_once('../model/funcoes/clienteDao.php');
+include_once('../app/model/funcoes/clienteDao.php');
 
 class Cliente{
     private $ID_CLIENTE;

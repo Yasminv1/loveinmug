@@ -1,6 +1,6 @@
 <?php
 
-include_once('../model/classes/Produto.php');
+include_once('../app/model/classes/Produto.php');
 
 class ProdutoDao{
     private $c;

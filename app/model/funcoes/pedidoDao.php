@@ -1,7 +1,7 @@
 <?php
 
-include_once('../model/classes/Pedido.php');
-include_once('../model/classes/Cliente.php');
+include_once('../app/model/classes/Pedido.php');
+include_once('../app/model/classes/Cliente.php');
 
 class PedidoDao{
     private $c;

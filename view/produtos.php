@@ -1,7 +1,7 @@
 <?php
-include_once "../conexao/Conexao.php";
-include_once "../model/funcoes/produtoDao.php";
-include_once "../model/classes/Produto.php";
+include_once "../controller/conexao/Conexao.php";
+include_once "../app/model/funcoes/produtoDao.php";
+include_once "../app/model/classes/Produto.php";
 
 //instancia as classes
 $produto = new Produto();

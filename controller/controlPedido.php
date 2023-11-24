@@ -1,11 +1,13 @@
 <?php
 
-include_once "../conexao/Conexao.php";
-include_once "../model/classes/Pedido.php";
-include_once "../model/funcoes/pedidoDao.php";
+include_once "../controller/conexao/Conexao.php";
+include_once "../app/model/classes/Pedido.php";
+include_once "../app/model/funcoes/pedidoDao.php";
 
 $pedido = new Pedido();
 $pedidodao = new pedidoDao();
+
+verificarAutenticacao();
 
 // Inicia uma sessão
 session_start();

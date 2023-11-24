@@ -46,7 +46,6 @@
             
                     <div id="result"></div>
                     
-            
                     <button type="submit" class="btn btn-second">Redefinir</button>
                 </form>
     </div>
